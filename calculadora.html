@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div id="divlogo">
+        <img src="imagens/brasao_ufersa.png" alt="brasão UFERSA">
+    </div>
+
+    <div>
+        <h1 id="h1">DETEC</h1>
+        <h2 id="h11">DEPARTAMENTO DE ENGENHARIAS E TECNOLOGIAS - PAU DOS FERROS</h2>
+    </div>
+
+	<div>
+		<a href="index.html"><button class="button">Início</button></a>
+		<a href="calculadora.html"><button class="button">Calculadora</button></a>
+		<a href="jogo.html"><button class="button">Jogo</button></a>
+	</div>
+
+
+	<div class="container2" >
+		<h1>Calculadora</h1>
+		<input type="text" id="display" disabled>
+
+        <div class="containerInterno2" >
+            <input type="button" value="/" onclick="addToDisplay('/')"></br>
+		    <input type="button" value="*" onclick="addToDisplay('*')"></br>
+            <input type="button" value="|%|" onclick="addToDisplay('%')"></br>
+            <input type="button" value="." onclick="addToDisplay('.')"></br>
+        </div>
+        <div class="containerInterno2" >
+		    <input type="button" value="7" onclick="addToDisplay('7')"></br>
+		    <input type="button" value="8" onclick="addToDisplay('8')"></br>
+		    <input type="button" value="9" onclick="addToDisplay('9')"></br>
+            <input type="button" value="+" onclick="addToDisplay('+')"></br>
+
+        </div>
+        <div class="containerInterno2" >
+		    <input type="button" value="4" onclick="addToDisplay('4')"></br>
+		    <input type="button" value="5" onclick="addToDisplay('5')"></br>
+		    <input type="button" value="6" onclick="addToDisplay('6')"></br>
+            <input type="button" value="-" onclick="addToDisplay('-')"></br>
+        </div>
+        
+        <div class="containerInterno2" >
+            <input type="button" value="1" onclick="addToDisplay('1')"></br>
+            <input type="button" value="2" onclick="addToDisplay('2')"></br>
+            <input type="button" value="3" onclick="addToDisplay('3')"></br>
+            <input type="button" value="" onclick="addToDisplay('')"></br>
+        </div>
+
+        <div class="containerInterno2">
+            <input type="button" value="0" onclick="addToDisplay('0')"></br>
+            <input type="button" value="C" onclick="clearDisplay()"></br>
+		    <input type="button" value="=" onclick="calculate()"></br>
+            <input type="button" value=""></br>
+        </div>
+		
+	</div>
+	
+	<script>
+		let display = document.getElementById("display"); 
+
+		function addToDisplay(value) {
+			display.value += value;
+		}
+
+		function clearDisplay() {
+			display.value = "";
+		}
+
+		function calculate() {
+			display.value = eval(display.value);
+		}
+	</script>
+</body>
+</html>

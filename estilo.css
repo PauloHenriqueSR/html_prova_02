@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1efef;
+}
+h1, h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(11, 11, 218);
+}
+#h11{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: rgb(231, 120, 30);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ddd;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card .content {
+    padding: 20px;
+}
+.card h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+#divlogo{
+    width: 4%;
+    margin: auto;
+    display: block;
+}
+
+/* ----------------------------------- */
+
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: #CCCCCC;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="text"] {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.button {
+    background-color: #4CAF50;
+      border: none;
+    color: white;
+      padding: 15px 32px;
+       text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.containerInterno2 {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top: 2px;
+}
+
+/* ---------------------------------- */
+
+#header{
+    width: 490px;
+    margin: 42px auto;
+}
+
+#header img{
+	float: left;
+	padding-top: 5px;
+}
+
+#header h1{
+	color: #E25C5C;
+    font-family: 'RobotoSlab';
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: -1px;
+    padding-left: 35px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+
+#search{
+	height: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#search input{
+	width: 389px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #417505;
+    color: hsl(150, 86%, 40%);
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#table{
+	width: 493px;
+	height: 493px;
+	margin: auto;
+	border: 3px solid rgb(231, 120, 30);;
+	border-radius: 10px;
+	border-spacing: 0;
+}
+
+#table td{
+	border-bottom: 3px solid rgb(231, 120, 30);
+	border-right: 3px solid rgb(231, 120, 30);;
+	width: 46px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 36px;
+	font-size: 36px;
+	letter-spacing: 2.9px;
+}
+
+.color{
+	background-color: #F5A623;
+	transition: background 0.5s ease-out;
+}
+
+#table tr:nth-child(10) td{
+	border-bottom: none;
+}
+
+#table td:last-child{
+	border-right: none
+}
+
+@media only screen and (max-width: 479px) {
+	#header{
+		width: 350px;
+		margin: 20px auto;
+    	display: inline-block;
+	}
+	
+	#header img{
+		width: 58px;
+	    height: 58px;
+	    padding-left: 38px;
+	}
+
+	#header h1{
+		font-size: 30px;
+	    padding-left: 20px;
+	    padding-top: 13px;
+	}
+
+	#search{
+		margin-bottom: 20px;
+	}
+
+	#search input{
+		width: 233px;
+		height: 40px;
+	}
+
+	#search button{
+		width: 85px;
+		height: 40px;
+    	margin-left: 5px;
+	}
+
+	#table{
+		width: 330px;
+		height: 330px;
+	}
+
+	#table td{
+		width: 33px;
+		font-size: 20px;
+	}
+}
+
+@font-face {
+	    font-family: 'Roboto';
+	    src: url('fonts/RobotoMono-Regular.ttf') format('truetype');
+	         
+	    font-weight: normal;
+	    font-style: normal; }
+
+@font-face {
+	    font-family: 'RobotoSlab';
+	    src: url('fonts/RobotoSlab-Regular.ttf') format('truetype');
+	         
+	    font-weight: normal;
+	    font-style: normal; }
